@@ -14,7 +14,7 @@ Dotfiles for Raspberry Pi
 ## Raspbian Wheezy
 
 ```bash
-# rpi-d
+nano .ssh/authorized_keys
 sudo bash
 nano /etc/network/interfaces
 # os x internet sharing
@@ -36,6 +36,7 @@ apt-get install -y espeak espeak-data espeak-dbg espeakup python-espeak
 apt-get install -y ssmtp mailutils
 # configure audio for headphone jack
 amixer cset numid=1
+nano /etc/ssmtp/ssmtp.conf
 exit
 mkdir ~/Codebase
 cd ~/Codebase
@@ -47,6 +48,27 @@ git clone git@github.com:parhamr/rpi-dotfiles.git
 ```
 
 ## Arch Linux ARM
+
+```bash
+nano .ssh/authorized_keys
+systemctl disable network@eth0.service
+systemctl stop network@eth0.service
+# power cycle; DHCP should auto configure on next boot
+pacman -Syu
+# Redis
+pacman -S redis
+# SQLite
+pacman -S sqlite sqlite-tcl
+# speech synthesizer: espeak
+pacman -S espeak
+# email
+pacman -S ssmtp
+# config: smtp.sendgrid.net:587
+nano /etc/ssmtp/ssmtp.conf
+# Git
+pacman -S git
+```
+
 
 # See Also
 
