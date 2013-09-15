@@ -54,6 +54,7 @@ nano .ssh/authorized_keys
 systemctl disable network@eth0.service
 systemctl stop network@eth0.service
 # power cycle; DHCP should auto configure on next boot
+nano /etc/resolv.conf
 pacman -Syu
 # Redis
 pacman -S redis
@@ -67,6 +68,13 @@ pacman -S ssmtp
 nano /etc/ssmtp/ssmtp.conf
 # Git
 pacman -S git
+mkdir ~/Codebase
+cd ~/Codebase
+git config --global user.email "reid.parham@gmail.com"
+git config --global user.name "parhamr"
+cat ~/.ssh/id_dsa.pub
+# add to GitHub account
+git clone git@github.com:parhamr/rpi-dotfiles.git
 ```
 
 
