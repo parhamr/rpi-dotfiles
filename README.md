@@ -47,6 +47,13 @@ cat ~/.ssh/id_dsa.pub
 git clone git@github.com:parhamr/rpi-dotfiles.git
 ```
 
+### Additional packages
+
+```bash
+apt-get install vim
+apt-get install python-pycurl libwww-curl-perl
+```
+
 ## Arch Linux ARM
 
 ```bash
