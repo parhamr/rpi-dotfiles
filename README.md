@@ -52,6 +52,8 @@ git clone git@github.com:parhamr/rpi-dotfiles.git
 ```bash
 apt-get install vim
 apt-get install python-pycurl libwww-curl-perl
+# wireless tools
+apt-get install iw libiw-dev
 ```
 
 ## Arch Linux ARM

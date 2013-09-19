@@ -1,0 +1,618 @@
+# http://www.cyberciti.biz/tips/linux-find-out-wireless-network-speed-signal-strength.html
+# https://wiki.debian.org/WiFi/HowToUse#Command_Line
+root@rpi-d:/home/pi# iwlist wlan0 scan
+wlan0     Scan completed :
+          Cell 01 - Address: 74:44:01:96:DE:81
+                    ESSID:"XPLANE_(2.4GHz)"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.422 GHz (Channel 3)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=66/100  
+          Cell 02 - Address: 00:1C:F9:05:B6:71
+                    ESSID:"pdx-pcfullauth"
+                    Protocol:IEEE 802.11bg
+                    Mode:Master
+                    Frequency:2.412 GHz (Channel 1)
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    Extra:rsn_ie=30160100000fac040100000fac040100000fac0100000000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+                    Quality=100/100  Signal level=10/100  
+          Cell 03 - Address: 74:44:01:96:DE:84
+                    ESSID:"Copious-Guest"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.422 GHz (Channel 3)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=66/100  
+          Cell 04 - Address: 74:44:01:96:DE:87
+                    ESSID:"Baker_Group_(2.4GHz)"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.422 GHz (Channel 3)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=66/100  
+          Cell 05 - Address: 74:44:01:96:EF:C0
+                    ESSID:""
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.412 GHz (Channel 1)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=46/100  
+          Cell 06 - Address: 74:44:01:96:EF:C1
+                    ESSID:"XPLANE_(2.4GHz)"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.412 GHz (Channel 1)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=43/100  
+          Cell 07 - Address: 74:44:01:96:EF:C4
+                    ESSID:"Copious-Guest"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.412 GHz (Channel 1)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=46/100  
+          Cell 08 - Address: 74:44:01:96:EF:C7
+                    ESSID:"Baker_Group_(2.4GHz)"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.412 GHz (Channel 1)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=95/100  Signal level=44/100  
+          Cell 09 - Address: 00:00:00:00:00:00
+                    ESSID:""
+                    Protocol:IEEE 802.11b
+                    Mode:Master
+                    Frequency:2.412 GHz (Channel 1)
+                    Encryption key:on
+                    Bit Rates:11 Mb/s
+                    Quality=100/100  Signal level=42/100  
+          Cell 10 - Address: 00:1C:F9:06:D7:31
+                    ESSID:"pdx-pcfullauth"
+                    Protocol:IEEE 802.11bg
+                    Mode:Master
+                    Frequency:2.412 GHz (Channel 1)
+                    Encryption key:on
+                    Bit Rates:54 Mb/s
+                    Extra:rsn_ie=30160100000fac040100000fac040100000fac0100000000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+                    Quality=100/100  Signal level=23/100  
+          Cell 11 - Address: 74:44:01:96:DE:80
+                    ESSID:""
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.422 GHz (Channel 3)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=101/100  Signal level=64/100  
+          Cell 12 - Address: 74:44:01:96:DE:83
+                    ESSID:"Copious-G"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.422 GHz (Channel 3)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=99/100  Signal level=70/100  
+          Cell 13 - Address: EC:9A:74:99:F7:F0
+                    ESSID:"HP-Print-F0-Officejet Pro 8600"
+                    Protocol:IEEE 802.11bg
+                    Mode:Master
+                    Frequency:2.422 GHz (Channel 3)
+                    Encryption key:off
+                    Bit Rates:54 Mb/s
+                    Quality=88/100  Signal level=10/100  
+          Cell 14 - Address: 74:44:01:96:E9:21
+                    ESSID:"XPLANE_(2.4GHz)"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.432 GHz (Channel 5)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality:101  Signal level:0  Noise level:0
+          Cell 15 - Address: 74:44:01:96:E9:23
+                    ESSID:"Copious-G"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.432 GHz (Channel 5)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality:101  Signal level:0  Noise level:0
+          Cell 16 - Address: 8C:0C:90:00:07:C8
+                    ESSID:"XPLANE-P"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=60/100  
+          Cell 17 - Address: 8C:0C:90:40:07:C8
+                    ESSID:"XPLANE"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=60/100  
+          Cell 18 - Address: 28:C6:8E:9D:AB:BC
+                    ESSID:"Maple Bay"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    Extra:rsn_ie=30140100000fac040100000fac040100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD1D0050F204104A0001101044000102103C0001011049000600372A000120
+                    Quality=90/100  Signal level=7/100  
+          Cell 19 - Address: C0:8A:DE:23:E1:88
+                    ESSID:"Locus"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac010000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : 802.1x
+                    Quality=97/100  Signal level=23/100  
+          Cell 20 - Address: C0:8A:DE:63:E1:88
+                    ESSID:"Euclid"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    Extra:rsn_ie=30140100000fac040100000fac040100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=40/100  Signal level=10/100  
+          Cell 21 - Address: C0:8A:DE:A3:E1:88
+                    ESSID:"Sinister"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    Extra:rsn_ie=30140100000fac040100000fac040100000fac010000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+                    Quality=97/100  Signal level=7/100  
+          Cell 22 - Address: C0:8A:DE:E3:E1:88
+                    ESSID:"Waterfall"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    Extra:rsn_ie=30140100000fac040100000fac040100000fac010000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+                    Quality=75/100  Signal level=23/100  
+          Cell 23 - Address: 58:93:96:14:F5:D8
+                    ESSID:"XPLANE-P"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.452 GHz (Channel 9)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=101/100  Signal level=43/100  
+          Cell 24 - Address: 58:93:96:54:F5:D8
+                    ESSID:"XPLANE"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.452 GHz (Channel 9)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=101/100  Signal level=43/100  
+          Cell 25 - Address: 58:93:96:94:F5:D8
+                    ESSID:"BakerGroup"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.452 GHz (Channel 9)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=101/100  Signal level=43/100  
+          Cell 26 - Address: 8C:0C:90:80:07:C8
+                    ESSID:"BakerGroup"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.437 GHz (Channel 6)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=101/100  Signal level=47/100  
+          Cell 27 - Address: 74:44:01:96:E0:43
+                    ESSID:"Copious-G"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.457 GHz (Channel 10)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=29/100  
+          Cell 28 - Address: 74:44:01:96:E0:44
+                    ESSID:"Copious-Guest"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.457 GHz (Channel 10)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=99/100  Signal level=21/100  
+          Cell 29 - Address: 74:44:01:96:E0:47
+                    ESSID:"Baker_Group_(2.4GHz)"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.457 GHz (Channel 10)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=97/100  Signal level=19/100  
+          Cell 30 - Address: 74:44:01:96:E0:41
+                    ESSID:"XPLANE_(2.4GHz)"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.457 GHz (Channel 10)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=99/100  Signal level=26/100  
+          Cell 31 - Address: 8C:0C:90:01:9A:48
+                    ESSID:"XPLANE-P"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=44/100  
+          Cell 32 - Address: 8C:0C:90:41:9A:48
+                    ESSID:"XPLANE"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=43/100  
+          Cell 33 - Address: 8C:0C:90:81:9A:48
+                    ESSID:"BakerGroup"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=42/100  
+          Cell 34 - Address: C0:8A:DE:21:20:98
+                    ESSID:"Locus"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac010000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : 802.1x
+                    Quality:54  Signal level:0  Noise level:0
+          Cell 35 - Address: C0:8A:DE:61:20:98
+                    ESSID:"Euclid"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:144 Mb/s
+                    Extra:rsn_ie=30140100000fac040100000fac040100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality:31  Signal level:0  Noise level:0
+          Cell 36 - Address: 8C:0C:90:01:92:B8
+                    ESSID:"XPLANE-P"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=77/100  Signal level=26/100  
+          Cell 37 - Address: 8C:0C:90:41:92:B8
+                    ESSID:"XPLANE"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=97/100  Signal level=42/100  
+          Cell 38 - Address: 8C:0C:90:81:92:B8
+                    ESSID:"BakerGroup"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:130 Mb/s
+                    Extra:wpa_ie=dd160050f20101000050f20401000050f20401000050f202
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    Quality=20/100  Signal level=26/100  
+          Cell 39 - Address: 74:44:01:96:E0:40
+                    ESSID:""
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.457 GHz (Channel 10)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=101/100  Signal level=10/100  
+          Cell 40 - Address: 2C:B0:5D:A3:29:C3
+                    ESSID:"Copious-G"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=26/100  
+          Cell 41 - Address: 2C:B0:5D:A3:29:C4
+                    ESSID:"Copious-Guest"
+                    Protocol:IEEE 802.11bgn
+                    Mode:Master
+                    Frequency:2.462 GHz (Channel 11)
+                    Encryption key:on
+                    Bit Rates:300 Mb/s
+                    Extra:wpa_ie=dd1a0050f20101000050f20202000050f2040050f20201000050f202
+                    IE: WPA Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Extra:rsn_ie=30180100000fac020200000fac04000fac020100000fac020000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : TKIP
+                        Pairwise Ciphers (2) : CCMP TKIP
+                        Authentication Suites (1) : PSK
+                    Quality=100/100  Signal level=42/100  
